@@ -1,0 +1,89 @@
+<html>
+    <head> 
+        <title>JavaScript functions </title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            form{
+                font-size: 20px;
+        
+            }
+        
+            
+            body{
+                background-image: url('water.avif');
+                background-size: 1400px 1400px;
+            }
+            
+            input{
+                box-sizing: 50px;
+            }
+            body{
+                background-image: url(../pics&videos/water.avif);
+            }
+        </style>
+
+    </head> 
+    <body>
+        
+        <div class="box" style="color:rgba(0, 0, 0, 0.781);">
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-phone"></i>
+            <div class="button">
+                <marquee direction="left">
+                <p>---------------NATURE'S HEAVEN RESORT WELCOMES YOU-----------</p>
+                </marquee>
+            </div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <br>
+        <div class="nav">
+            <a href="major.html">Home  <i class="fa-sharp fa-solid fa-house"></i></a>
+            <a href="explore.html">Explore</a>
+            <a href="serve.html">Services & more</a>
+            <a href="accomodation.html">Accomodations</a>
+            <a href="contact.html">Contact Us  <i class="fa-sharp fa-solid fa-phone"></i></a>
+            <a href="logup.html">Login/Sign Up</a>
+            <a href="profile.html">Your Profile   <i class="fa-solid fa-user"></i></a>
+        </div>
+        <br><br>
+            
+            <form  name="myformm" action="pay.html"class="containerr" style="background-color:lavender">
+            <h1 style="font-size: 45px; color: #04aa6d;;">Book your stay now...</h1>
+            <h3>Enter your date of check-in:</h1>
+            <input type="date" value="idate" required>
+            <h3>Enter your date of check-out:</h1>
+            <input type="date" value="odate" required>
+            <h3>Enter your choice of stay:</h1>
+            <input type="radio" name="general" value="general">General(2000/- per 24 hrs) <br>
+            <input type="radio" name="suite" value="suiteroom">Suite room(2799/- per 24 hrs)<br>
+            <input type="radio" name="treehouse" value="treehouse">Tree - House(3499/- per 24 hrs)<br>
+            <h3>Enter your choices of additional activities(changes can be made at the time of stay):<br>
+            All these per 1 hr 349/-... and cab services if chosen are for 1000/-
+            </h3>
+            <input type="checkbox" name="pool" value="pool" id="mycheck">Pool<br>
+            <input type="checkbox" name="spa" value="spa" id="mycheck">Spa<br>
+            <input type="checkbox" name="gym" value="gym" id="mycheck">Gym<br>
+            <input type="checkbox" name="bicycle" value="bicycle" id="mycheck">Bicycle<br>
+            <input type="checkbox" name="gaming" value="gaming" id="mycheck">Gaming<br>
+            <input type="checkbox" name="cab pickup and drop" value="cab" id="mycheck">Cab pickup and drop<br>
+            <h3>Enter number of adults</h3>
+            <input type="number" initial="0" step="1" placeholder="-">
+            <h3>Enter number of children</h3>
+            <input type="number" initial="0" step="1" placeholder="-">
+            <button type="submit" class="btn">Submit</button>
+            
+    </form>
+
+    </body>
+
+
+</html>

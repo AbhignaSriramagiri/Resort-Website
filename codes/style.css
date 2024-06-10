@@ -1,0 +1,140 @@
+.box{
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: black;
+    color:antiquewhite;
+    /*border: border-box;*/
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.button{
+    background-color: burlywood;
+    margin-top: -2px;
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-bottom: 2px;
+    color: black;
+    height:30px;
+    width:700px;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+}
+.nav{
+    padding-top: 0cqb;
+    padding: 12px;
+    overflow: visible;
+    background-color: darkslategrey;
+}
+.nav a{
+   text-align: center;
+   padding: 9px 34px;
+   text-justify:distribute;
+   font-size: 20px;
+   color:firebrick;
+   color-interpolation-filters: linearRGB;
+   background-color: beige;
+   box-sizing: border-box;
+   border-radius: 12px;
+}
+.nav a:hover{
+    background-color:black;
+    color:antiquewhite;
+    overflow: visible;
+    object-fit: fill;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-style:dashed;
+}
+.box2{
+    padding-top: 0cqb;
+    overflow:visible;
+    background-size: 600px 500px;
+}
+.containerr{
+    position: absolute;
+    right:0;
+    margin: 20px;
+    max-width: 500px;
+    padding: 16px;
+    background-color: white;
+}
+#myvideo{
+    
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    
+    z-index: -1;
+}
+video{
+    position:relative;
+}
+
+marquee{
+    direction: rtl;
+    animation:forwards;
+}
+.imgg{
+    text-align: center;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.text{
+    margin-top: 20px;
+    font-size: 19px;
+    color: #333;
+}
+#myVideo {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  
+  }
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  @media Screen and (min-width:768px) and (max-width:1024px){
+    body {
+        background-color: rgb(177, 48, 48);
+    }
+}
+@media Screen and (min-width:1224px) {
+    body {
+        background-color: rgb(106, 11, 78);
+    }
+}
+@media Screen and (min-width:1824px) {
+    body {
+        background-color: rgb(201, 71, 78);
+    }
+}     

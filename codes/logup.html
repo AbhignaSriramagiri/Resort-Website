@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Login?Sign Up</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+          function loginvalidation(){
+            var uname= document.myform.uname.value;
+            var psw=document.myform.psw.value;
+            if(uname==null || uname==''){
+              alert('Please enter valid username');
+              return false;
+            }
+            else if(psw==null || psw.length<6){
+              alert('Please enter valid password');
+              return false;
+            }
+            return true;
+          }
+        </script>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  left:480px;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <video autoplay loop muted id="myvideo">
+    <source src="../pics&videos/rain.mp4">
+  </video>
+  <div class="box">
+    <i class="fa-regular fa-envelope"></i>
+    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-phone"></i>
+    <div class="button">
+        <marquee direction="left">
+        <p>---------------NATURE'S HEAVEN RESORT WELCOMES YOU-----------</p>
+        </marquee>
+    </div>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+</div>
+<br>
+<div class="nav">
+    <a href="major.html">Home  <i class="fa-sharp fa-solid fa-house"></i></a>
+    <a href="explore.html">Explore</a>
+    <a href="serve.html">Services & more</a>
+    <a href="accomodation.html">Accomodations</a>
+    <a href="contact.html">Contact Us  <i class="fa-sharp fa-solid fa-phone"></i></a>
+    <a href="logup.html">Login/Sign Up</a>
+    <a href="profile.html">Your Profile   <i class="fa-solid fa-user"></i></a>
+</div>
+<br><br>
+<div class="bg-img">
+  <form action="loginsuccess.html"  name="myform" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <pre style="font-size: 17px;"><a href="forgot.html">Forgot Username??</pre></a>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <pre style="font-size: 17px;"><a href="forgot.html">Forgot Password??</pre></a>
+    <button type="submit" class="btn" onclick="return loginvalidation(this);">Login</button>
+    <pre style="font-size: 17px;">New User?? <a href="reg.html">Sign Up here</pre></a>
+  </form>
+</div>
+
+</body>
+</html>
