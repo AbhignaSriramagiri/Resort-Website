@@ -69,18 +69,19 @@
     alert('Email must be a valid email address!');
     return false;
     }
-    if(!(data_7= data_8)){
-        alert('Not your confirmed password matches with the created.Retry...');
-        return false;
-    }
-    if(data_7.length<6){
-        alert('Create a password which is minimum 6 characters long');
-        return false;
-    }
-    if(data_4.length < 10){
+    if(data_4.value.length != 10){
         alert('Enter valid Mobile number');
         return false;
     }
+    if(data_7.value.length < 6){
+        alert('Create a password which is minimum 6 characters long');
+        return false;
+    }
+    if(!(data_7.value == data_8.value)){
+        alert('Not your confirmed password matches with the created.Retry...');
+        return false;
+    }
+
      return true;
     }
     function isEmpty(str) { return (str.length === 0 || !str.trim()); }
